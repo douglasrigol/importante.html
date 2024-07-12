@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Muito importante</title>
+</head>
+
+<body>
+
+  <h1> VAMOS DE HAMBURGUER HOJE??? </h1>
+  
+
+ <!--botão não-->
+ <div onmousemove"moveButton(this)" >
+  <div class="button"> <button class="glow-on-hover" type="button">NÃO</button>
+  </div>
+</div>
+
+
+ <!--botão sim-->
+ <div class="container">
+  <div class="child"></div>
+  <div class="button"> 
+    <a href="https://twitter.com/qqrmeme/status/1621490389327691776">
+     <button class="glow-on-hover" type="button">SIM</button>
+    </a>
+  </div>
+</div>
+
+
+
+<script>
+  function moveButton(x) {
+      marginX = Math.floor(Math.random()*300)
+      marginY = Math.floor(Math.random()*300)
+
+      x.style.margin = marginY.toString() + 'px ' + marginX.toString() + 'px'
+  }
+</script>
+  
+
+  
+
+</body>
+
+
+
+</html>
